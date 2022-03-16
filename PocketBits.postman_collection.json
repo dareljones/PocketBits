@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "c79297ea-47a3-4e72-b1f0-8ec9d009507e",
+		"name": "PocketBits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "jones",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/balances?coin=ripple&balance=3372",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balances"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "ripple"
+						},
+						{
+							"key": "balance",
+							"value": "3372"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Balance",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "userId",
+						"value": "jones",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/balances?coin=ripple&balance=45.97",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balances"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "ripple"
+						},
+						{
+							"key": "balance",
+							"value": "45.97"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Balances",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "jones",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/all-balances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"all-balances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "jones",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/balances?coin=ripple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balances"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "ripple"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Balance",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "userId",
+						"value": "jones",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/balances/ripple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balances",
+						"ripple"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
